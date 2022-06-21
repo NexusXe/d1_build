@@ -109,5 +109,11 @@ add_config 'CONFIG_CRC32' 'y'
 add_config 'CONFIG_USE_OF' 'y'
 add_config 'CONFIG_OF_LIBFDT_OVERLAY' 'y'
 
+#
+# Enable kernel debugging
+#
+add_config 'CONFIG_DEBUG_INFO=y'
+add_config 'CONFIG_DEBUG_KERNEL=y'
+
 echo "Config File Follows #####################"
 cat ${CONF_FILE}

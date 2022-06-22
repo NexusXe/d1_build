@@ -31,15 +31,6 @@ jobs:
           run: |
             docker-compose up panel
             ls -l lichee_rv_86/*
-        - name: Release
-          uses: softprops/action-gh-release@v1
-          if: true
-          with:
-            files: |
-              lichee_rv_86/lichee_rv_86*.img.xz
-              lichee_rv_dock/lichee_rv_dock*.img.xz
-              README.txt
-              
         - uses: actions/upload-artifact@v3
           with:
             name: dock-artifact
